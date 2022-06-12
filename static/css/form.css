@@ -1,0 +1,31 @@
+.form--login,
+.form--register,
+.form--create-update {
+    max-width: 25rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+}
+
+.form--login div,
+.form--register div,
+.form--create-update div {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: .15rem;
+    padding: .25rem;
+}
+
+.form--login div:last-child,
+.form--register div:last-child,
+.form--create-update div:last-child {
+    grid-template-columns: auto;
+}
+
+.form--login input[value='login'],
+.form--register input[value='register'],
+.form--create-update input[value='create'],
+.form--create-update input[value='update'] {
+    text-transform: capitalize;
+}

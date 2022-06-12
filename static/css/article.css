@@ -1,0 +1,48 @@
+.article-grid {
+    display: grid;
+    grid-template-columns:  
+        repeat(auto-fit, minmax(15rem, 1fr));
+    gap: .125rem;
+    padding: .25rem;
+}
+
+.article-item {
+    display: grid;
+    justify-items: center;
+    gap: .125rem;
+    background-color: whitesmoke;
+}
+
+.article-item__title {
+    padding: .5rem 0rem .3rem;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    color: skyblue;
+    text-transform: uppercase;
+}
+
+.article-item__descr-min {
+    font-size: 1rem;
+}
+
+.article-item__descr-max {
+    margin: .5rem;
+    padding: .5rem;
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .5);
+}
+
+/* allows to handle pictures of different size */
+.article-item__img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.article-item__action {
+    font-size: 1.1rem;
+}
+
+.article-item__action > a {
+    margin: auto .3rem;
+}

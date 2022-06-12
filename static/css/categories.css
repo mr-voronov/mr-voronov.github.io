@@ -1,0 +1,12 @@
+.categories-list-grid {
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+.categories-list-grid section {
+    margin: .5rem auto;
+}
+
+.categories-list-grid section h3 {
+    text-transform: capitalize;
+}
